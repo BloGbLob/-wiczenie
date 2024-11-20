@@ -3,10 +3,147 @@
 <html> 
      <head> 
              <meta charset="utf-8"> 
-             <title>plik seliak</title> 
+             <title>formularz seliak</title>
+             <style>
+            body{
+            background-color: #7fd156   
+             } 
+             .survey-container {
+            display: flex;
+            gap: 0px; 
+        }
+        .column {
+            flex: 1; 
+        }
+        .footer-buttons {
+            margin-top: auto; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+             </style>
      </head> 
  <body> 
-<font color="red" size="1" face="Verdana"> tutaj będzie formularz </font><br>
-<p><A HREF="index.html"> wstecz </A>   
+<center><h1> Formularz o grze Stardew Valley</h1></center>
+<form enctype="text/plain" action="mailto:maksden843@gmail.com" subject="formularz_dane" method="Post">
+    <div class="survey-container">
+        <div class="column">
+    <TABLE>
+        <TR height="100">
+         <TD width="600"> 
+         <b>Imię i nazwisko lib nickname w grze</b> &nbsp &nbsp &nbsp &nbsp <input name="imie" size="22"> 
+         <br><br>
+         <b>Podaj swój adres e-mail</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp &nbsp <input name="e-mail" size="22"> 
+         <br><br>
+         <b>Podaj hasło </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp <input name="Hasło" size="22"> 
+         <br><br></TABLE>
+         <TABLE>
+            <TD display="flex"><nobr>Ile czasu zazwyczaj spędzasz na grze Stardew Valley podczas jednej sesji?</nobr>
+               <br><br>
+               <input type="radio" name="mniej niż 2" value="mniej niż 2"> mniej niż 2 godziny
+               <input type="radio" name="2-4" value="2-4" checked> 2-4 godz 
+               <input type="radio" name="4-6" value="4-6"> 4-6 godz 
+               <input type="radio" name=">6" value=">6"> > 6 godz </TD>
+                </TR>
+            </TABLE> <br>
+            <TABLE>
+                <TD><nobr>Gdzie najczęściej łowisz ryby?</nobr>
+                   <br><br>
+                   <input type="radio" name="jezioro" value="1"> Na jeziorach
+                   <br><br>
+                   <input type="radio" name="rzeka" value="2"> Na rzece
+                   <br><br>
+                   <input type="radio" name="ocean" value="3"> Na oceanie</TD>
+                    </TR>
+                </TABLE>
+            <TABLE>
+                <TD display="flex"><nobr>Twoje ulubione pory roku w grze?</nobr>
+                    <br><br>
+                    <input type="radio" name="pora" value="W"> Wiosna
+                    <input type="radio" name="pora" value="L"> Lato 
+                    <input type="radio" name="pora" value="J"> Jesień
+                    <input type="radio" name="pora" value="Z"> Zima
+                    <input type="radio" name="pora" value="Wsz"> Wszystkie :) </TD>
+                    </TR>
+                </TABLE> <br>
+            <TABLE>
+                <TD display="flex"><nobr>Które z tych umiętności rozwijasz najchętniej w Stardew Valley? (Można zaznaczyć 1+ opcji) </nobr>
+                    <br><br>
+                    <input type="checkbox" name="umiętność" value="u"> Rybactwo <br><br>
+                    <input type="checkbox" name="umiętność" value="u"> Górnictwo<br><br>
+                    <input type="checkbox" name="umiętność" value="u"> Rolnictwo<br><br>
+                    <input type="checkbox" name="umiętność" value="u"> Walka </TD>
+                    </TR>
+                </TABLE> <br>
+            <TABLE>
+                <TD display="flex"><nobr>Które z tych aktywności najbardziej lubisz wykonywać na farmie? (Wybierz wszystkie, które Ci pasują) </nobr>
+                    <br><br>
+                    <input type="checkbox" name="aktyw" value="a"> Uprawa roślin <br><br>
+                    <input type="checkbox" name="aktyw" value="a"> Opieka nad zwierzętami<br><br>
+                    <input type="checkbox" name="aktyw" value="a"> Budowa i ulepszanie budynków<br><br></TD>
+                    </TR>
+                </TABLE> <br>
+            <TABLE>
+                <TD display="flex"><nobr>Jakie typy zwierząt hodujesz na swojej farmie? </nobr>
+                    <br><br>
+                    <input type="checkbox" name="zwierz" value="zw" checked> Kury
+                    <input type="checkbox" name="zwierz" value="zw"> Krowy
+                    <input type="checkbox" name="zwierz" value="zw"> Kaczki
+                    <input type="checkbox" name="zwierz" value="zw"> Owce
+                    <input type="checkbox" name="zwierz" value="zw"> Króliki</TD>
+                    </TR>
+                </TABLE> <br>
+            <TABLE>
+            <TD width="800" > 
+                <b>Jakie masz podejście do handlu w grze?</b>
+                <select style="display: inline-block;">
+                <option value="sprz wsz">Sprzedaję wszystko</option>
+                <option value="sprz poł">Sprzedaję połówę</option>
+                <option value="prez">Dużo zostawiam na prezenty</option>
+                <option value="zim">Utrzymuję zapasy na zimę</option>
+                <option value="rzadko sprz">Rzadko coś sprzedaję</option>
+                </select>
+            </TD></TABLE>       
+            <TABLE>
+            <TD width="400" > 
+                <b>Gdzie spędzasz więcej czasu?</b><select> 
+                <option value="town">Pelican Town</option>
+                <option value="jezioro">Górskie Jezioro</option>
+                <option value="plaża">Plaża</option>
+                <option value="Kopalnia">Kopalnia</option>
+                </select>
+            </TD></TABLE>  
+            <TD width="400" > 
+                <b>Jak często angażujesz się w interakcje z mieszkańcami?</b><select> 
+                <option value="codz">Codziennie</option>
+                <option value="kilk">Kilka razy w tygodniu</option>
+                <option value="rzad">Rzadko</option>
+                </select>
+                <!-- <TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
+                    podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br> 
+                    wybierz kolor &nbsp &nbsp<input type="color"> <br> </TD> 
+                <TD> Na ile lubisz tą grę? <input type="range"> <br>
+                    Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać...</progress> </TD>-->
+            </TD></TABLE><br><br>
+            <TD><button onclick="alert('Nie zapomnij o sianie na zimę!!!')" style="height:40px;width:100px">Rada 1</button></TD>&nbsp&nbsp&nbsp
+            <TD><button onclick="alert('Nie zapomnij uszczęśliwić zwierząt!')" style="height:40px;width:100px">Rada 2</button></TD>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <TD><nobr><input type="reset" value="Czyść" style="height:80px; width:150px"> </TD>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <TD> <input type="submit" value="Wyślij formularz" style="height:80px; width:150px"> </TD>
+            <p><A HREF="index.html"> wstecz </A>
+            </div>
+            <div class="column">
+            <TABLE>
+                <TR height="100">
+                <TD width="600">
+                <b>Z kim jesteś najlepszym przyjacielem (przyjacielką)? Podaj imię</b> <br> <input name="imie przyjac" size="22"> 
+         <br><br>
+                <b> Opisz krótko, jak organizujesz pola na swojej farmie (do 150 symbolów)</b> <br><br> <textarea name="organiz_na_farmie" style="width: 200px; height: 100px; resize: both;" maxlength="150"></textarea>
+                <br><br><b>Kogo uważasz za najlepszą osobę do poślubienia w Stardew Valley i dlaczego?</b> <br> <br><textarea name="poślubienie" id="poślubienie" style="width: 400px; height: 300px;"></textarea> 
+            </TD><br><br><br>
+            <IMG src="OIP.jpeg" width="270" height="400">
+            </div>
+  </div> 
 </body> 
 </html> 
